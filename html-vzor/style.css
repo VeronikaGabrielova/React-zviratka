@@ -3,11 +3,17 @@
   Níže jsou pak styly pro jednotlivé komponenty.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* intuitivnejsi box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 html {
   margin: 0;
@@ -19,11 +25,10 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('images/zoo.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/zoo.jpg");
   background-position: center, center;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
@@ -33,7 +38,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 h1 {
@@ -45,7 +50,6 @@ h1 {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-
 .container {
   max-width: 1100px;
   margin: 30px auto;
@@ -54,9 +58,7 @@ h1 {
   grid-gap: 30px;
 }
 
-
 /* komponenta AnimalList nepotřebuje žádné styly */
-
 
 /* styly pro komponentu Animal */
 .animal {
@@ -85,24 +87,20 @@ h1 {
   border-radius: 3px;
 }
 
-.animal__desc{
+.animal__desc {
   flex: 1;
 }
 
 .animal__name {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 18px;
 }
 
 .animal__latin {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #888;
 }
-
-
-
-
 
 /* styly pro komponentu AnimalDetail */
 .detail {
@@ -129,7 +127,7 @@ h1 {
 
 .detail__name {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 48px;
   line-height: 1;
 }
@@ -143,7 +141,7 @@ h1 {
 
 .detail__latin {
   margin: 5px 0 0 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 24px;
   line-height: 1;
 }
@@ -157,7 +155,6 @@ h1 {
 
 .detail__info {
   padding: 50px 30px 30px 30px;
-
 }
 
 .detail__desc {
@@ -175,7 +172,7 @@ h1 {
 .detail__item h3,
 .detail__zoo h3 {
   margin: 0 0 5px 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #999;
 }
